@@ -67,8 +67,6 @@ function App() {
         );
 
 
-
-
       const browserTimeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".browser-section",
@@ -175,9 +173,6 @@ function App() {
           "-=0.2"
         );
 
-      /* --------------------------------
-         MOUSE PARALLAX
-      -------------------------------- */
 
       const handleMouseMove = (event) => {
         const x = event.clientX / window.innerWidth - 0.5;
@@ -452,7 +447,7 @@ function App() {
       <span>TAIGA BROWSER © 2026</span>
 
       <a
-        href="https://t.me/taiga_browser"
+        href="https://t.me/TaigaBroswer"
         target="_blank"
         rel="noopener noreferrer"
         className="footer-tg-link"
@@ -470,4 +465,4 @@ function App() {
   );
 }
 
-export default App; App;
+export default App;
