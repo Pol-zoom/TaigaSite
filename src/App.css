@@ -20,9 +20,6 @@ main {
   position: relative;
 }
 
-/* =========================
-   AMBIENT AURORA
-========================= */
 .ambient-aurora {
   position: absolute;
   border-radius: 50%;
@@ -66,9 +63,6 @@ main {
   100% { transform: translate(-30px, -50px) scale(0.9); }
 }
 
-/* =========================
-   HERO
-========================= */
 
 .hero {
   height: 100vh;
@@ -192,9 +186,6 @@ main {
 
 }
 
-/* =========================
-   HERO BROWSER
-========================= */
 
 .hero-browser {
   position: absolute;
@@ -213,11 +204,6 @@ main {
 
   pointer-events: none;
 }
-
-/* =========================
-   MANIFESTO
-========================= */
-
 .manifesto {
   min-height: 100vh;
 
@@ -281,9 +267,6 @@ main {
   color: rgba(212, 196, 255, 0.7);
 }
 
-/* =========================
-   BROWSER SECTION
-========================= */
 
 .browser-section {
   height: 100vh;
@@ -388,9 +371,7 @@ main {
   color: rgba(212, 196, 255, 0.7);
 }
 
-/* =========================
-   FINAL
-========================= */
+
 
 .final {
   height: 100vh;
@@ -474,9 +455,6 @@ main {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* =========================
-   DOWNLOAD
-========================= */
 
 .download {
   min-height: 80vh;
@@ -601,9 +579,7 @@ main {
   box-shadow: 0 15px 35px rgba(140, 100, 255, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* =========================
-   FOOTER
-========================= */
+
 
 footer {
   padding: 30px 40px;
@@ -641,9 +617,7 @@ footer {
   transform: translateY(-1px);
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 800px) {
 
@@ -748,9 +722,6 @@ footer {
     gap: 10px;
   }
 }
-/* =========================
-   DOWNLOAD PLATFORMS
-========================= */
 
 .download-platforms {
   width: min(620px, 90vw);
