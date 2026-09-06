@@ -346,39 +346,33 @@ function App() {
         </div>
 
       </section>
-
 <section
   className="download"
   id="download"
 >
+  <span>TAIGA BROWSER</span>
 
-<span>TAIGA BROWSER</span>
+  <h2 className="download-title">
+    Готов попробовать?
+  </h2>
 
-<h2 className="download-title">
-  Готов попробовать?
-</h2>
+  <div className="download-platforms">
 
-<div className="download-platforms">
+    <a
+      href="https://github.com/Pol-zoom/TaigaSite/releases/download/Broswer/TAIGA.Browser.Setup.2.0.1.exe"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="download-platform active"
+    >
+      <div className="platform-icon">
+        <FaWindows size={22} />
+      </div>
 
-  <a
-    href="https://github.com/Pol-zoom/TaigaSite/releases/download/Broswer/TAIGA.Browser.Setup.2.0.1.exe"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="download-platform active"
-  >
-    <div className="platform-icon">
-      <FaWindows size={22} />
-    </div>
-
-    <div className="platform-info">
-      <strong>Windows</strong>
-      <small>WINDOWS · x64, ARM64</small>
-    </div>
-  </a>
-
-</div>
-
-
+      <div className="platform-info">
+        <strong>Windows</strong>
+        <small>WINDOWS · x64, ARM64</small>
+      </div>
+    </a>
 
     <div className="download-platform disabled">
       <div className="platform-icon">
@@ -443,27 +437,3 @@ function App() {
     TAIGA Browser · Your internet, your way.
   </p>
 </section>
-
-    <footer>
-      <span>TAIGA BROWSER © 2026</span>
-
-      <a
-        href="https://t.me/TaigaBroswer"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="footer-tg-link"
-      >
-        <FaTelegram size={12} />
-        <span>TELEGRAM КАНАЛ</span>
-      </a>
-
-      <span>
-        MADE FOR THE OPEN WEB
-      </span>
-    </footer>
-
-  </main>
-  );
-}
-
-export default App;
