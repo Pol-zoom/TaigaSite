@@ -421,19 +421,26 @@ function App() {
 
   </div>
 
-  <div className="download-community">
-    <a
-      href="https://t.me/TaigaBroswer"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="download-tg-btn"
-    >
-      <FaTelegram size={16} />
-      <span>TELEGRAM КАНАЛ</span>
-    </a>
-  </div>
+    <footer>
+      <span>TAIGA BROWSER © 2026</span>
 
-  <p>
-    TAIGA Browser · Your internet, your way.
-  </p>
-</section>
+      <a
+        href="https://t.me/TaigaBroswer"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="footer-tg-link"
+      >
+        <FaTelegram size={12} />
+        <span>TELEGRAM КАНАЛ</span>
+      </a>
+
+      <span>
+        MADE FOR THE OPEN WEB
+      </span>
+    </footer>
+
+  </main>
+  );
+}
+
+export default App;
