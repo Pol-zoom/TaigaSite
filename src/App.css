@@ -20,7 +20,9 @@ main {
   position: relative;
 }
 
-
+/* =========================
+   AMBIENT AURORA
+========================= */
 .ambient-aurora {
   position: absolute;
   border-radius: 50%;
@@ -64,7 +66,9 @@ main {
   100% { transform: translate(-30px, -50px) scale(0.9); }
 }
 
-
+/* =========================
+   HERO
+========================= */
 
 .hero {
   height: 100vh;
@@ -188,7 +192,9 @@ main {
 
 }
 
-
+/* =========================
+   HERO BROWSER
+========================= */
 
 .hero-browser {
   position: absolute;
@@ -208,7 +214,9 @@ main {
   pointer-events: none;
 }
 
-
+/* =========================
+   MANIFESTO
+========================= */
 
 .manifesto {
   min-height: 100vh;
@@ -273,7 +281,9 @@ main {
   color: rgba(212, 196, 255, 0.7);
 }
 
-
+/* =========================
+   BROWSER SECTION
+========================= */
 
 .browser-section {
   height: 100vh;
@@ -378,7 +388,9 @@ main {
   color: rgba(212, 196, 255, 0.7);
 }
 
-
+/* =========================
+   FINAL
+========================= */
 
 .final {
   height: 100vh;
@@ -462,7 +474,9 @@ main {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-
+/* =========================
+   DOWNLOAD
+========================= */
 
 .download {
   min-height: 80vh;
@@ -551,14 +565,45 @@ main {
 }
 
 .download p {
-  margin-top: 60px;
+  margin-top: 30px;
 
   color: rgba(140, 100, 255, .4);
 
   font-size: 10px;
 }
 
+.download-community {
+  margin-top: 40px;
+}
 
+.download-tg-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: rgba(140, 100, 255, 0.08);
+  border: 1px solid rgba(161, 124, 255, 0.35);
+  border-radius: 100px;
+  color: #d4c4ff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 20px rgba(140, 100, 255, 0.15);
+}
+
+.download-tg-btn:hover {
+  background: rgba(140, 100, 255, 0.25);
+  border-color: rgba(161, 124, 255, 0.8);
+  color: #ffffff;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 35px rgba(140, 100, 255, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
   padding: 30px 40px;
@@ -566,6 +611,8 @@ footer {
   display: flex;
 
   justify-content: space-between;
+
+  align-items: center;
 
   border-top: 1px solid rgba(255,255,255,.08);
 
@@ -576,7 +623,27 @@ footer {
   letter-spacing: .2em;
 }
 
+.footer-tg-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(161, 124, 255, 0.7);
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+}
 
+.footer-tg-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(161, 124, 255, 0.8);
+  transform: translateY(-1px);
+}
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -681,7 +748,9 @@ footer {
     gap: 10px;
   }
 }
-
+/* =========================
+   DOWNLOAD PLATFORMS
+========================= */
 
 .download-platforms {
   width: min(620px, 90vw);
@@ -806,6 +875,12 @@ footer {
   .platform-icon {
     width: 38px;
     height: 38px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
   }
 
 }
