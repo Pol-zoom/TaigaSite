@@ -18,9 +18,7 @@ function App() {
 
   useGSAP(
     () => {
-      /* --------------------------------
-         HERO
-      -------------------------------- */
+
 
       const heroTimeline = gsap.timeline({
         scrollTrigger: {
@@ -68,9 +66,7 @@ function App() {
           0.1
         );
 
-      /* --------------------------------
-         BROWSER
-      -------------------------------- */
+
 
 
       const browserTimeline = gsap.timeline({
@@ -111,9 +107,6 @@ function App() {
           duration: 0.35,
         });
 
-      /* --------------------------------
-         FEATURES
-      -------------------------------- */
 
       gsap.utils.toArray(".feature").forEach((feature) => {
         const image = feature.querySelector(".feature-visual");
@@ -158,9 +151,6 @@ function App() {
           );
       });
 
-      /* --------------------------------
-         DOWNLOAD
-      -------------------------------- */
 
       const download = gsap.timeline({
         scrollTrigger: {
