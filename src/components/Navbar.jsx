@@ -22,7 +22,7 @@ export default function Navbar() {
         </a>
 
         <a
-          href="t.me/TaigaBroswer"
+          href="https://t.me/TaigaBroswer"
           target="_blank"
           rel="noopener noreferrer"
           className="nav-tg"
