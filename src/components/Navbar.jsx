@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { FaTelegram } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -19,6 +20,16 @@ export default function Navbar() {
         <a href="#download">
           DOWNLOAD
         </a>
+
+        <a
+          href="t.me/TaigaBroswer"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-tg"
+        >
+          <FaTelegram size={13} />
+          <span>TELEGRAM</span>
+        </a>
       </div>
 
       <div className="nav-status">
@@ -27,5 +38,3 @@ export default function Navbar() {
       </div>
 
     </nav>
-  );
-}
