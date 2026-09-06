@@ -433,7 +433,7 @@ function App() {
 
   <div className="download-community">
     <a
-      href="t.me/TaigaBroswer"
+      href="https://t.me/TaigaBroswer"
       target="_blank"
       rel="noopener noreferrer"
       className="download-tg-btn"
