@@ -67,6 +67,8 @@ function App() {
         );
 
 
+
+
       const browserTimeline = gsap.timeline({
         scrollTrigger: {
           trigger: ".browser-section",
@@ -104,6 +106,7 @@ function App() {
           x: 0,
           duration: 0.35,
         });
+
 
 
       gsap.utils.toArray(".feature").forEach((feature) => {
@@ -346,6 +349,7 @@ function App() {
         </div>
 
       </section>
+
 <section
   className="download"
   id="download"
@@ -372,6 +376,10 @@ function App() {
         <strong>Windows</strong>
         <small>WINDOWS · x64, ARM64</small>
       </div>
+
+      <span className="platform-arrow">
+        ↓
+      </span>
     </a>
 
     <div className="download-platform disabled">
@@ -420,6 +428,23 @@ function App() {
     </div>
 
   </div>
+
+  <div className="download-community">
+    <a
+      href="https://t.me/TaigaBroswer"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="download-tg-btn"
+    >
+      <FaTelegram size={16} />
+      <span>TELEGRAM КАНАЛ</span>
+    </a>
+  </div>
+
+  <p>
+    TAIGA Browser · Your internet, your way.
+  </p>
+</section>
 
     <footer>
       <span>TAIGA BROWSER © 2026</span>
