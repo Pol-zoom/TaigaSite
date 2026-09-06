@@ -359,16 +359,13 @@ function App() {
 
   <div className="download-platforms">
 
-    <a
-      href="https://mega.nz/file/24IxUa6Y#oApAQbImyjKEYQcSBLG46WVC614QLfUUNJQ97xutYKs"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="download-platform active"
-    >
-      <div className="platform-icon">
-        <FaWindows size={22} />
-      </div>
 
+<a
+  href="https://github.com/Pol-zoom/TaigaSite/releases/download/Broswer/TAIGA.Browser.Setup.2.0.1.exe"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="download-platform active"
+>
       <div className="platform-info">
         <strong>Windows</strong>
         <small>WINDOWS · x64, ARM64</small>
