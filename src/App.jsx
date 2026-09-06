@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaWindows, FaLinux } from "react-icons/fa";
+import { FaWindows, FaLinux, FaTelegram } from "react-icons/fa";
 
 import Navbar from "./components/Navbar";
 import BrowserMockup from "./components/BrowserMockup";
@@ -18,6 +18,9 @@ function App() {
 
   useGSAP(
     () => {
+      /* --------------------------------
+         HERO
+      -------------------------------- */
 
       const heroTimeline = gsap.timeline({
         scrollTrigger: {
@@ -65,6 +68,9 @@ function App() {
           0.1
         );
 
+      /* --------------------------------
+         BROWSER
+      -------------------------------- */
 
 
       const browserTimeline = gsap.timeline({
@@ -105,6 +111,9 @@ function App() {
           duration: 0.35,
         });
 
+      /* --------------------------------
+         FEATURES
+      -------------------------------- */
 
       gsap.utils.toArray(".feature").forEach((feature) => {
         const image = feature.querySelector(".feature-visual");
@@ -149,6 +158,9 @@ function App() {
           );
       });
 
+      /* --------------------------------
+         DOWNLOAD
+      -------------------------------- */
 
       const download = gsap.timeline({
         scrollTrigger: {
@@ -173,7 +185,9 @@ function App() {
           "-=0.2"
         );
 
-
+      /* --------------------------------
+         MOUSE PARALLAX
+      -------------------------------- */
 
       const handleMouseMove = (event) => {
         const x = event.clientX / window.innerWidth - 0.5;
@@ -299,7 +313,7 @@ function App() {
         <Feature
           number="04"
           title="Быстрый"
-          description="Если TAIGA рассчитана на сверхбыструю работу, то даже десятки открытых вкладок не должны замедлить её мгновенный запуск."
+          description="TAIGA запускается мгновенно и остаётся быстрым даже тогда, когда у тебя открыты десятки вкладок."
           type="speed"
         />
 
@@ -313,7 +327,7 @@ function App() {
         <Feature
           number="06"
           title="Красивый"
-          description="Каждая деталь интерфейса создана с нуля  от вкладок до новой страницы."
+          description="Каждая деталь интерфейса создана с нуля — от вкладок до новой страницы."
           type="design"
         />
 
@@ -427,6 +441,18 @@ function App() {
 
   </div>
 
+  <div className="download-community">
+    <a
+      href="t.me/TaigaBroswer"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="download-tg-btn"
+    >
+      <FaTelegram size={16} />
+      <span>TELEGRAM КАНАЛ</span>
+    </a>
+  </div>
+
   <p>
     TAIGA Browser · Your internet, your way.
   </p>
@@ -434,6 +460,16 @@ function App() {
 
     <footer>
       <span>TAIGA BROWSER © 2026</span>
+
+      <a
+        href="https://t.me/taiga_browser"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="footer-tg-link"
+      >
+        <FaTelegram size={12} />
+        <span>TELEGRAM КАНАЛ</span>
+      </a>
 
       <span>
         MADE FOR THE OPEN WEB
@@ -444,4 +480,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; App;
