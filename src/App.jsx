@@ -363,7 +363,7 @@ function App() {
   <div className="download-platforms">
 
     <a
-      href="https://github.com/Pol-zoom/TaigaSite/releases/download/Broswer/TAIGA.Browser.Setup.2.0.1.exe"
+      href="https://github.com/Pol-zoom/TaigaSite/releases/download/Broswer/TAIGA.Browser.Setup.2.1.0.exe"
       target="_blank"
       rel="noopener noreferrer"
       className="download-platform active"
