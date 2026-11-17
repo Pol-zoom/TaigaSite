@@ -1,0 +1,8 @@
+{
+  "name": "TAIGA Browser",
+  "description": "TAIGA Browser — быстрый, красивый браузер нового поколения.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
